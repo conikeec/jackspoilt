@@ -1,5 +1,5 @@
 **What are we proving**
-1. Jackson Databind Deserialization vulnerability (https://docs.google.com/document/d/1MmF27tVvUbROMFQQRmjw-_syDnGxF1nNWbls0xY0vg4/edit?usp=sharing)
+1. Jackson Databind Deserialization vulnerability 
 
 **Context of application**
 1. Microservice based on Spark Framework (http://sparkjava.com/)
