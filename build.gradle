@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'io.shiftleft.jackspoilt'
+version = '1.0-SNAPSHOT'
+
+description = """jackspoilt"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+        
+     maven { url "https://shiftleft.jfrog.io/shiftleft/libs-release" }
+     maven { url "https://shiftleft.jfrog.io/shiftleft/libs-snapshot" }
+     maven { url "http://repo.spring.io/plugins-release" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.sparkjava', name: 'spark-core', version:'2.7.2'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version:'1.1.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version:'2.8.7'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version:'1.2.3'
+    compile group: 'net.jcip', name: 'jcip-annotations', version:'1.0'
+    compile group: 'xalan', name: 'xalan', version:'2.7.2'
+    testCompile group: 'junit', name: 'junit', version:'3.8.1'
+}
